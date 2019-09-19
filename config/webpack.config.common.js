@@ -20,8 +20,9 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js', '.scss', 'md'],
         alias: {
-            Icon: path.resolve(__dirname, '../src/architecture.md'),
-            Assets: path.resolve(__dirname, 'src/assets/')
+            MD: path.resolve(__dirname, '../src/architecture.md'),
+            Assets: path.resolve(__dirname, 'src/assets/'),
+
         }
     },
 
@@ -43,11 +44,16 @@ module.exports = {
                 }
             },
             {
-                test: /\.(scss|sass)$/,
+                test: /\.(sa|sc|c)ss$/,
                 use: [
-                    {loader: 'style-loader', options: {sourceMap: isDev}},
-                    {loader: 'css-loader', options: {sourceMap: isDev}},
-                    {loader: 'sass-loader', options: {sourceMap: isDev}}
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: process.env.NODE_ENV === 'development',
+                        },
+                    },
+                    'css-loader',
+                    'sass-loader',
                 ],
                 include: helpers.root('src', 'assets')
             },

@@ -1,0 +1,15 @@
+body {
+  background-color: #9aaaaf;
+  app-root {
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid red;
+    border-radius: 10px;
+    .svg-icon {
+      height: 250px;
+      width: 250px;
+      background-image: url("./logo.svg");
+      position: absolute;;
+    }
+  }
+}

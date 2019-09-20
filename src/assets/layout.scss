@@ -7,23 +7,30 @@ body {
   font: bold 12px "Microsoft JhengHei Light";
   margin: 2em;
   padding: 2em;
+
   .svg-icon {
     width: 250px;
     height: 250px;
-    margin: 1.5rem;
-    padding: 0.5rem;
+
   }
+
+  a {
+    margin: 0 1em;
+    padding: 0.56em;
+  }
+
   a:hover {
     background: white;
-    color: crimson ;
-    border: 1px solid green;
+    color: crimson;
+    border: 1px solid black;
     border-radius: 10px;
-    padding: 0.3em;
   }
+
   h1:last-child {
-    padding: 5em 0;
+    padding: 3.5em 6em;
     font: italic 72px Cambria;
   }
+
   hr {
     margin: 1.5em 0;
   }

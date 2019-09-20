@@ -6,7 +6,16 @@
 body {
   font: bold 12px "Microsoft JhengHei Light";
   .svg-icon {
+    width: 250px;
+    height: 250px;
     margin: 1.5rem;
     padding: 0.5rem;
+  }
+  a:hover {
+    background: white;
+    color: crimson ;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 0.3em;
   }
 }

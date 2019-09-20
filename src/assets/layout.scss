@@ -5,6 +5,8 @@
 
 body {
   font: bold 12px "Microsoft JhengHei Light";
+  margin: 2em;
+  padding: 2em;
   .svg-icon {
     width: 250px;
     height: 250px;
@@ -17,5 +19,12 @@ body {
     border: 1px solid green;
     border-radius: 10px;
     padding: 0.3em;
+  }
+  h1:last-child {
+    padding: 5em 0;
+    font: italic 72px Cambria;
+  }
+  hr {
+    margin: 1.5em 0;
   }
 }

@@ -14,7 +14,6 @@ module.exports = {
         vendor: './src/vendor.ts',
         polyfills: './src/polyfills.ts',
         main: isDev ? './src/main.ts' : './src/main.aot.ts'
-
     },
 
     resolve: {
@@ -22,13 +21,11 @@ module.exports = {
         alias: {
             MD: path.resolve(__dirname, '../src/architecture.md'),
             Assets: path.resolve(__dirname, 'src/assets/'),
-
         }
     },
 
     module: {
         rules: [
-
             {
                 test: /\.html$/,
                 loader: 'html-loader'
@@ -70,7 +67,7 @@ module.exports = {
                 test: /\.svg$/,
                 loader: 'svg-inline-loader',
                 options: {}
-            }
+            },
         ]
     },
 
